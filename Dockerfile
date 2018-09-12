@@ -9,7 +9,7 @@ RUN apk update && apk upgrade \
 && cd tinycc/ \
 && ./configure --config-musl --prefix=/gcctcc && make && make install \
 && export PATH=/gcctcc/bin:$PATH \
-&& make clean && ./configure --config-musl --cc=tcc && make && make install \
+&& make clean && ./configure --config-musl --cc=tcc && make cross && make && make install \
 && rm -rf /var/cache/apk/* \
 && rm -rf /root/tinycc* \
 && rm -rf /tmp/*
