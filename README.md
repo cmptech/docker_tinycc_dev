@@ -7,4 +7,5 @@
 * autoconf build-base: for trandition gcc
 * linux-headers: related headers for alpine linux
 * nasm: for SmallerC needs
+* npx: some time needs a smaller exe..
 
